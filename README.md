@@ -1,6 +1,6 @@
 # A LANDING PAGE
 
-This is a landing page for with information about the business, services offered and contact details.
+This is a landing page with information about the business, services offered and contact details.
 
 ## Table of contents
 
