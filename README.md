@@ -1,6 +1,6 @@
 # A LANDING PAGE
 
-This is a landing page for a business with information about the business, services offered and contact
+This is a landing page for with information about the business, services offered and contact details.
 
 ## Table of contents
 
@@ -10,12 +10,12 @@ This is a landing page for a business with information about the business, servi
 
 # Screenshot
 
-![](images/PortfolioScreenshot.png)
+![](images/landing%20page%20Screenshot.png)
 
 # Links
 
-- github URL: https://github.com/MercySitienei/codsoft_1.git
-- Live Site URL: https://mercysitienei.github.io/codsoft_1/
+- github URL: https://github.com/MercySitienei/codsoft_2.git
+- Live Site URL: https://mercysitienei.github.io/codsoft_2/
 
 # Built with
 
