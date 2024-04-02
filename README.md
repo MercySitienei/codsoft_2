@@ -10,7 +10,7 @@ This is a landing page with information about the business, services offered and
 
 # Screenshot
 
-![](images/landing%20page%20Screenshot.png)
+![](images/Screenshot.png)
 
 # Links
 
