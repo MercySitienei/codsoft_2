@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", serif;
+}
+.header-top{
+    background: linear-gradient(to left, rgb(173, 17, 144), orange) right;
+    padding: 0 2rem 0.5rem 2rem;
+    font-size: 0.7rem;
+
+}
+.header-bottom{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.socials{
+    display: flex;
+    margin-bottom: 0.2rem;
+}
+.socials i{
+    color: white;
+}
+.social-media{
+    padding: 0.2rem 0.5rem;
+    border-left: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials i:hover,
+.email:hover{
+    color:rgb(52, 52, 194);
+    font-size: larger;
+}
+.linkedin{
+    border-right: 1px solid white;
+
+}
+.phone,
+.email{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+.request-consultant button{
+    border-radius: 30px;
+    padding: 0.3rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 0.7rem;
+
+}
+button:hover{
+    background-color: rgb(52, 52, 194);
+    border-color: rgb(52, 52, 194);
+}
+.request-consultant a{
+    text-decoration: none;
+    color: white;
+}
+.logo img{
+    width: 2rem;
+    height: 2rem;
+}
+.logo h1{
+    font-size: 0.7rem;
+    padding-left: 0.4rem;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    padding: 1rem 0.3rem;
+}
+.navbar-overlay li{
+    list-style: none;
+    margin-top: 1rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+.navbar-overlay a{
+    text-decoration: none;
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    transition: 0.6s ease;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 19%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    z-index: 9999;
+}
+.navbar-overlay{
+    padding-top: 50px;
+}
+.fa-x{
+    position: absolute;
+    top: 1.5%;
+    left: 95%;
+    cursor: pointer;
+    color: white;
+    width: 40px;
+    height: 40px;
+
+}
+.fa-bars{
+    padding: 1rem 0.3rem;
+
+   
+}
+.fa-search{
+    background-color: black;
+    color: white;
+    padding: 1rem 0.3rem;
+    font-size: 0.7rem;
+}
+
+/* hero section */
+.hero{
+    position: relative;
+    background-image: url("images/herophoto.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45vh;
+    width: 100%;
+    padding: 0 2rem;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hero h2,
+.hero h3,
+.hero p,
+.hero-btns{
+    position: relative;
+    z-index: 1;
+    padding: 0  0 0.3rem 0.3rem;
+}
+.hero h2{
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-shadow: -0.5px -5px 2px rgba(255, 255, 255, 0.6);
+    color: white;
+    
+}
+.hero h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-shadow: 145px 0px 2px rgba(255, 255, 255, 0.6);
+    color: white;
+
+}
+.hero p{
+    font-size: 0.5rem;
+    color: white;
+}
+.hero-content{
+    border-left: 2px solid;
+    border-image: linear-gradient(to bottom, rgba(173, 17, 144, 1), rgba(255, 165, 0, 1)) 1;
+}
+.hero-readmore-btn a,
+.hero-request-btn a{
+    text-decoration: none;
+    color: white;
+}
+.hero-request-btn{
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    padding: 5px;
+    border: 1px solid white;
+    box-shadow: 25px 0px 2px transparent;
+    text-shadow: 25px 0px 2px rgba(255, 255, 255, 0.4);
+}
+.hero-readmore-btn{
+    background: linear-gradient(to left, rgb(173, 17, 144), orange) right;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    padding: 5px;
+    border: transparent;
+    color: white;
+    box-shadow: -25px 0px 2px rgba(255, 165, 0, 0.4);
+    text-shadow: -25px 0px 2px rgba(255, 255, 255, 0.4);
+}
+.hero-readmore-btn:hover,
+.about-content button:hover{
+    background: rgb(52, 52, 194);
+}
+
+/* overview sect */
+.overview-content{
+    display: grid;
+    grid-template-columns: 1.5rem auto;
+    gap: 10px;
+    align-items: center;
+}
+.overview-content p{
+    grid-column-end: span 2;
+    font-size: 0.5rem;
+}
+.overview{
+    background: linear-gradient(to left, rgb(173, 17, 144), orange) right;
+    padding: 1rem 2rem;
+    font-size: 0.7rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.fa-bell,
+.fa-clock,
+.fa-headphones{
+    padding: 5px;
+    border: 1.4px solid white;
+    border-radius: 100%;
+    height: auto;
+    font-size: 0.6rem;
+    text-align: center;
+}
+/* about section */
+.about{
+    padding: 1rem 2rem;
+}
+.about-content{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.about-content h1,
+.services h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 17px;
+}
+.about-content h1 span,
+.services h1 span{
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    border-image: linear-gradient(to left, rgba(173, 17, 144, 1), orange) 1;
+}
+.about-content h2{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.about-content p{
+    font-size: 0.6rem;
+}
+.about-content button{
+    background: linear-gradient(to left, rgb(173, 17, 144), orange) right;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    padding: 5px;
+    border: transparent;
+    color: white;
+    width: 5rem;
+}
+.about-content button a{
+    text-decoration: none;
+    color: white;
+}
+.about-image{
+    position: relative;
+    height: 40vh;
+}
+.about-emptydiv,
+.about-photo{
+    position: absolute;
+}
+.about-photo{
+    height: 10rem;
+    width: auto;
+    bottom: 2.5%;
+    left: 10%;
+}
+.about-photo img{
+    width: 40vw;
+    height: 100%;
+}
+.about-emptydiv{
+    border-width: 1.6px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgba(173, 17, 144, 1), orange) 1;
+    width: 65vw;
+    height: 10%;
+    bottom: 2%;
+}
+
+/* services */
+.services{
+    background-image: url(images/servicesbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem 0 3rem 2rem;
+    position: relative;
+}
+.our-services{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+}
+.services::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 10%, 100%, 0.7);
+}
+
+.services h1,
+.ux,
+.creative-design,
+.retina-ready{
+    z-index: 1;
+    position: relative;
+}
+.services h1{
+    margin-bottom: 3rem;
+}
+.ux{
+    background-image: url(images/userexperience.jpg);
+    height: 30vh;
+    width: 87vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+.ux div,
+.creative-design div,
+.retina-ready div{
+    background-color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 1;
+    position: relative;
+    top: 10%;
+    display: flex;
+    
+}
+.ux p,
+.creative-design p,
+.retina-ready p{
+    padding: 7px;
+}
+.ux span,
+.creative-design span,
+.retina-ready span{
+    background: linear-gradient(to left, rgb(173, 17, 144), orange) right;
+    border-radius: 100%;
+    padding: 3px;
+    width: 1.5rem;
+    height: 100%;
+    font-size: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.creative-design{
+    background-image: url(images/creativedesign.jpg);
+    height: 30vh;
+    width: 87vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+.retina-ready{
+    background-image: url(images/retinaready.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 87vw;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+footer{
+    background-color: rgba(224, 152, 18, 0.4);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+.copyright a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.copyright a:hover{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: darkblue;
+}
+@media (min-width:701px){
+    .header-top,
+    .header-bottom,
+    .hero,
+    .about,
+    .services{
+        padding: 0 5rem;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        gap: 1rem;
+    }
+    nav ul li:hover{
+        background-color: orange;
+    }
+    .services{
+        padding: 3rem 5rem;
+    }
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .socials{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+    .request-consultant{
+        padding: 0.3rem;
+    }
+    .overview{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 5rem;
+    }
+    .overview-content p{
+        font-size: 0.7rem;
+    }
+    
+    .about{
+        display: flex;
+    }
+    .about-content{
+        width: 40%;
+    }
+    .about-emptydiv{
+        width: 50vw;
+    }
+    .about-photo img{
+        width: 30vw;
+        padding-left: 40%;
+    }
+    .hero h2{
+        font-size: 0.8rem;
+    }
+
+    .hero h3{
+        font-size: 1.2rem;
+        
+    }
+    .hero p{
+        font-size: 0.7rem;
+    }
+}
+@media (min-width:901px){
+    .our-services{
+        display: flex;
+        flex-direction: row;
+    }
+    .contact{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        font-size: 1rem;
+    }
+    .phone{
+        border-right: 1px solid white;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:701px){
+    .nav-items{
+        display: none;
+    }
+    .overview{
+        font-size: 0.8rem;
+    }
+
+}
+@media (min-width:551px) and (max-width:700px){
+    .overview{
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+}
+

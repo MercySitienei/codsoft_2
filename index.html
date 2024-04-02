@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a company's landing page">
+    <meta name="author" content="Mercy Sitienei">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="socials">
+                <div class="twitter social-media">
+                    <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="instagram social-media">
+                    <a target="_blank" href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="facebook social-media">
+                    <a target="_blank" href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="youtube social-media">
+                    <a target="_blank" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="pinterest social-media">
+                    <a target="_blank" href="https://pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+                <div class="linkedin social-media">
+                    <a target="_blank" href="https://linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+            <div class="contact">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+254-726-366-689</p>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>sitieneimercy21@gmail.com</p>
+                </div>
+
+            </div>
+            <div class="request-consultant">
+                <button><a href="#">Request a consultant</a> </button>
+
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="logo">
+                <img src="images/logo.png" alt="company logo">
+                <h1>LANDING PAGE</h1>
+
+            </div>
+            <nav class="nav">
+                <div class="mobile-menu">
+                    <i class="fa-solid fa-bars fa-2x" id="openOverlay" onclick="openOverlay()"></i>
+                </div>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Buy Now</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="search">
+                <i class="fa-solid fa-search"></i>
+            </div>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <span class="close-overlay" id="closeOverlay" onclick="closeOverlay()">
+                    <i class="fa-solid fa-x"></i>
+                </span>
+                <div class="navbar-overlay">
+                    <ul>
+                        <li><a href="#hero" onclick="closeOverlay()">Home</a></li>
+                        <li><a href="#" onclick="closeOverlay()">Blog</a></li>
+                        <li><a href="#about" onclick="closeOverlay()">About</a></li>
+                        <li><a href="#services" onclick="closeOverlay()">Services</a></li>
+                        <li><a href="#" onclick="closeOverlay()">Testimonials</a></li>
+                        <li><a href="contact.html" onclick="closeOverlay()">Contact</a></li>
+                        <li><a href="#" onclick="closeOverlay()">Buy Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <!-- hero section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h2>WE ARE CREATIVE</h2>
+                <h3>CREATIVE DIGITAL AGENCY</h3>
+                <P>Welcome to the Nexus of Innovation: Where Boundless Creativity Fuels Digital Excellence. Partner with Us to Unleash Your Vision and Navigate a Digital Odyssey to Unprecedented Success.<br> Let Your Ideas Soar as We Craft Limitless Possibilities Together!</P>
+                <div class="hero-btns">
+                    <button class="hero-readmore-btn"><a href="#">READ MORE</a></button>
+                    <button class="hero-request-btn"><a href="#">REQUEST AN AGENT</a></button>
+                </div>
+            </div>
+        </section>
+        <!-- end of hero section -->
+
+        <!-- overview section -->
+        <div class="overview">
+            <div class="overview-content">
+                <i class="fa-solid fa-bell"></i>
+                <h4>LAUNCH BUSINESS</h4>
+                <p>Take the first step towards achieving your dreams with us.</p>
+            </div>
+            <div class="overview-content">
+                <i class="fa-solid fa-headphones"></i>
+                <h4>ONLINE SUPPORT TEAM</h4>
+                <p>Our online support  team is available 24/7.</p>
+            </div>
+            <div class="overview-content">
+                <i class="fa-regular fa-clock"></i>
+                <h4>TIME MANAGEMENT</h4>
+                <p>We help you save time so you can focus on growing your business.</p>
+            </div>
+        </div>
+        <!-- end of overview section -->
+
+        <!-- about section -->
+        <div class="about" id="about">
+            <div class="about-content">
+                <h1><span>ABOU</span>T US</h1>
+                <h2>15 years, we are passionate about achieving better results for our clients</h2>
+                <p>At our Creative Digital Agency, we're passionate about pushing boundaries and delivering transformative digital experiences. Our team of experts collaborates to craft innovative solutions tailored to your brand's needs. From web design to digital marketing, we're committed to exceeding expectations and driving real results. Join us on a journey of digital transformation where creativity reigns supreme.</p>
+                <button><a href="#">READ MORE</a></button>
+
+            </div>
+            <div class="about-image">
+                <div class="about-emptydiv"></div>
+                <div class="about-photo">
+                    <img src="images/aboutimage.jpg" alt="about image">
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end of about section -->
+
+        <!-- services -->
+        <div class="services" id="services">
+            <h1><span>OUR</span> SERVICES</h1>
+            <div class="our-services">
+                <div class="ux">
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-volume-high"></i>
+                        </span>
+                        <p>
+                            USER EXPERIENCE
+                        </p>
+                    </div>
+                </div>
+                <div class="creative-design">
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </span>
+                        <p>
+                            CREATIVE DESIGN
+                        </p>
+                    </div>
+                </div>
+                <div class="retina-ready">
+                    <div>
+                        <span>
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </span>
+                        <p>
+                            RETINA READY
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>
+                2024 &copy; Created by <a href="https://mercysitienei.github.io/codsoft_1/">Mercy Sitienei</a>
+
+            </p>
+        </div>
+    </footer>
+    <script>
+
+         function openOverlay() {
+            document .getElementById("overlay") .style.display = "flex";
+            document .getElementById("openOverlay") .style.display = "none";
+        }
+        function closeOverlay() {
+            document .getElementById("overlay") .style.display = "none";
+            document .getElementById("openOverlay") .style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>
